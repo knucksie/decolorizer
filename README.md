@@ -4,8 +4,9 @@
 
 Инструкция по установке:
     1) Склонировать репозиторий
+    2) Установить зависимости: 
     
-    2) Установить зависимости: pip install -r requirements.txt 
+    pip install -r requirements.txt 
    
 Запуск:
     1) Запустить DecolorizerBot.py
