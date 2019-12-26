@@ -12,8 +12,8 @@ def get_message(message):
     downloaded_file = bot.download_file(file_info.file_path)
     with open(name, 'wb') as new_file:
         new_file.write(downloaded_file)
-    result = Decolorizer.decolorize(name, name + "_decolorized.jpg")
-    img = open(result, 'rb')
+    Decolorizer.decolorize(name, name + "_decolorized.jpg")
+    img = open(name + "_decolorized.jpg", 'rb')
     bot.send_photo(message.chat.id, img)
 
 
