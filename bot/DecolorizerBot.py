@@ -1,7 +1,8 @@
 import telebot
+import os
 from decolorizer import Decolorizer
 
-bot = telebot.TeleBot('976833115:AAEIOasx0p0wKUr9JHxgtUOZvTnhCxwMMjo')
+bot = telebot.TeleBot('os.getenv("BOT_API_TOKEN")')
 
 
 @bot.message_handler(content_types=['photo'])
